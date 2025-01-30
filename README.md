@@ -62,3 +62,7 @@ $Token = "your_access_token_here"
 # Run the script
 .\Get-CAPolicies.ps1 -Token $Token
 ```
+
+### 3. `Get-GraphTokens.ps1`
+This is taken from:
+https://github.com/dafthack/GraphRunner
