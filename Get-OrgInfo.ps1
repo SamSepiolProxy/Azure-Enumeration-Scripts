@@ -445,8 +445,7 @@ function Check-MDIInstance {
             $results.details  = "MDI instance active"
             $results.redteam_implications = @(
                 "MDI monitors AD authentication patterns and will detect suspicious Kerberos activity (Golden/Silver tickets, overpass-the-hash)",
-                "Lateral movement techniques like remote execution and NTLM relay attacks are monitored and alerted on",
-                "Consider AMSI bypass for post-exploitation tools and use of legitimate admin tools to blend in"
+                "Lateral movement techniques like remote execution and NTLM relay attacks are monitored and alerted on"
             )
         }
     }
