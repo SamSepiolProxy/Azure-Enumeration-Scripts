@@ -33,6 +33,14 @@ This script retrieves Conditional Access policies from Azure AD, resolves GUIDs 
 - Resolves GUID references (e.g., users, groups, applications, roles) to friendly names.
 - Saves raw JSON and resolved policy data for easy reference.
 
+### 3. `Get-GraphTokens.ps1`
+This is based on the following and modified to be similar the MSGraph Powershell module:
+https://github.com/dafthack/GraphRunner
+
+### 4. `Get-OrgInfo.ps1`
+This is based on the following and modified to include additional enumeration and ported to PowerShell:
+https://github.com/dafthack/GraphRunner
+
 ---
 
 ## Usage Instructions
@@ -43,26 +51,14 @@ Generate a valid Microsoft Graph API token with the required permissions.
 
 ### Step 2: Run the Scripts
 
-#### For Administrative Units and Roles
-
 ```powershell
 # Replace the placeholder with your valid OAuth token
 $Token = "your_access_token_here"
 
 # Run the script
 .\Get-AdminUnitsAndRoles.ps1 -Token $Token
+
+# Or if Get-GraphTokens was used
+
+.\Get-CAPolicies.ps1 -Token $tokens.access_token
 ```
-
-#### For Conditional Access Policies
-
-```powershell
-# Replace the placeholder with your valid OAuth token
-$Token = "your_access_token_here"
-
-# Run the script
-.\Get-CAPolicies.ps1 -Token $Token
-```
-
-### 3. `Get-GraphTokens.ps1`
-This is based on the following and modified to be similar the MSGraph Powershell module:
-https://github.com/dafthack/GraphRunner
