@@ -64,5 +64,5 @@ $Token = "your_access_token_here"
 ```
 
 ### 3. `Get-GraphTokens.ps1`
-This is taken from:
+This is based on the following and modified to be similar the MSGraph Powershell module:
 https://github.com/dafthack/GraphRunner
