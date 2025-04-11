@@ -5,8 +5,13 @@ This repository contains PowerShell scripts for managing and extracting data fro
 ---
 
 ## Scripts Overview
+### `Convert-TenantIdToName.ps1`
 
-### 1. `Get-AdminUnitsAndRoles.ps1`
+#### Permissions
+
+CrossTenantInformation.ReadBasic.All
+
+### `Get-AdminUnitsAndRoles.ps1`
 
 #### Description
 
@@ -21,7 +26,7 @@ This script retrieves all Azure AD administrative units, their members, and scop
 
 ---
 
-### 2. `Get-CAPolicies.ps1`
+### `Get-CAPolicies.ps1`
 
 #### Description
 
