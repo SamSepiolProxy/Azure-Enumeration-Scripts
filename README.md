@@ -7,7 +7,7 @@ This repository contains PowerShell scripts for managing and extracting data fro
 ## Scripts Overview
 ### `Convert-TenantIdToName.ps1`
 
-#### Permissions
+#### Least Permissions
 
 CrossTenantInformation.ReadBasic.All
 
@@ -23,6 +23,11 @@ This script retrieves all Azure AD administrative units, their members, and scop
 - Retrieves member users for each administrative unit.
 - Resolves scoped role assignments and maps role IDs to display names.
 - Exports data to a CSV file named `AdminUnitsDetailsWithRolesAndTypes.csv`.
+
+#### Least Permissions
+
+Directory.Read.All
+AdministrativeUnit.Read.All
 
 ---
 
