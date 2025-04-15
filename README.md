@@ -56,7 +56,11 @@ https://github.com/dafthack/GraphRunner
 #### Least Permissions
 RoleEligibilitySchedule.Read.Directory
 RoleAssignmentSchedule.Read.Directory
-RoleManagement.Read.Directory 
+RoleManagement.Read.Directory
+
+### `GGet-GraphTokens`
+Azurehound needs:
+1950a258-227b-4e31-a9cf-717495945fc2
 
 ---
 
