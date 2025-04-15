@@ -7,7 +7,7 @@ function Get-GraphTokens {
 
         # Specify the scope for authentication. This will be URL encoded for the initial request.
         [Parameter(Mandatory = $false)]
-        [string]$Scope = "RoleEligibilitySchedule.Read.Directory RoleAssignmentSchedule.Read.Directory RoleManagement.Read.Directory offline_access profile openid"
+        [string]$Scope = "offline_access profile openid"
     )
     <#
         .SYNOPSIS
