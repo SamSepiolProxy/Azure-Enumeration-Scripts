@@ -51,6 +51,13 @@ https://github.com/dafthack/GraphRunner
 This is based on the following and modified to include additional enumeration and ported to PowerShell:
 https://github.com/dafthack/GraphRunner
 
+### `Get-EntraRoles`
+
+#### Least Permissions
+RoleEligibilitySchedule.Read.Directory
+RoleAssignmentSchedule.Read.Directory
+RoleManagement.Read.Directory 
+
 ---
 
 ## Usage Instructions
