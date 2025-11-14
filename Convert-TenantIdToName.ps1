@@ -5,7 +5,7 @@
     This script accepts a Tenant ID and a valid Microsoft Graph access token as parameters.
     It then queries the Microsoft Graph beta endpoint:
       https://graph.microsoft.com/beta/tenantRelationships/findTenantInformationByTenantId(tenantId='<TenantId>')
-    The response is used to output the tenant’s display name.
+    The response is used to output the tenant's display name.
 .PARAMETER Token
     A valid Bearer token with appropriate permissions.
 .PARAMETER TenantId
@@ -40,8 +40,10 @@ try {
     # Check and output the tenant display name if available.
     # The response is expected to include a property like 'displayName'
     if ($response -and $response.displayName) {
-        Write-Output "Tenant ID    : $TenantId"
-        Write-Output "Display Name : $($response.displayName)"
+        Write-Output "Tenant ID            : $TenantId"
+        Write-Output "Display Name         : $($response.displayName)"
+        Write-Output "Default Domain Name  : $($response.defaultDomainName)"
+        Write-Output "Federation Brand Name: $($response.federationBrandName)"
     }
     else {
         Write-Output "No display name found for Tenant ID: $TenantId"
